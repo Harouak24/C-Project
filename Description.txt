@@ -1,0 +1,20 @@
+Before accessing the interface, the user must either login or signup
+
+
+ 	1) Log in: 
+ 	 	The user must enter the email and password. Your program must check if the user exists (you will be provided with an input file (“database.txt”) that contains 3 users to start with). A user exists if the email and the password entered match the ones in the file. If by mistake, the user mistyped the password by inverting 2 consecutive characters, you must ask him the secret question which is available in the file and check the answer with the one provided too. Also, if the email entered does not match one of those available in the file, you should direct the user to the signup menu. 
+  2) Signup Menu: 
+ 	The user is prompted to enter all the information as shown in the input file. When entering the information, if the user enters an existing email or bank account number available in the record.txt file, he will be informed that the information already exists in the records file and needs to enter different ones. 3) Logout Program: 
+ 	When the user decides to exit the program 1 output file is created. It is similar to the input file except that it contains the updated information (the updated password, new users, etc…) and it is alphabetically sorted by family name. This file must be named: output.txt.  
+ 
+ 
+Once signed in, hen your program must interact with the user in a loop that allows the user to perform the following actions 
+
+
+1)	Change user information  
+ 	The user will be introduced to a page where he/ she can change any information in their profile (profile names, password, email, account number-banking account) and the information must be updated to the user profile. Before any change to the profile, the user MUST be asked to re-authenticate by reentering the password only. 
+ Password rules: for safety concerns the password must contain 12 characters that must include 3 lowercase letters, 3 uppercase letters, 3 digits, and three other characters that are not digits and not letters. You must make sure the password does not contain the following special characters: ‘@’,  ‘\’,  ‘;’ 
+2)	Pay bill  
+ 	The program should deduct the amount of 500dhs from the user’s balance. In case the balance is not enough, the user will be deleted from the users list, and the next time he/she tries to login they will be forwarded to the sign up page.   
+4) End subscription  
+The user can decide to end his subscription when he wants. When doing so, you should delete all user information. 
